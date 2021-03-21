@@ -205,3 +205,28 @@ main{
     nav,
     .grid{flex-direction: column;}
 }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 3; }
+    .div2 { grid-area: 2 / 1 / 3 / 2; }
+    .div3 { grid-area: 2 / 2 / 3 / 3; }
+    .div4 { grid-area: 3 / 1 / 4 / 2; }
+    .div5 { grid-area: 3 / 2 / 4 / 3; }
+
+
+    .div1 img{
+        height: 30%;
+        width: 30%;
+    }
+    .div2 img, .div3 img, .div4 img, .div5 img{
+        height: 20%;
+        width: 20%;
+
+    }
